@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gmail Email Categorizer — Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gmail Email Categorizer</h1>
+
+    <section>
+      <h2>API Key</h2>
+      <input type="password" id="apiKey" placeholder="Enter your Anthropic API key">
+      <button id="saveKey">Save Key</button>
+      <span id="keyStatus"></span>
+    </section>
+
+    <section>
+      <h2>Categories</h2>
+      <div id="categoryList"></div>
+      <div class="add-category">
+        <input type="text" id="newCategoryName" placeholder="Category name">
+        <input type="color" id="newCategoryColor" value="#607d8b">
+        <button id="addCategory">Add</button>
+      </div>
+    </section>
+
+    <p class="note">"Other" cannot be removed — it's the fallback category.</p>
+  </div>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

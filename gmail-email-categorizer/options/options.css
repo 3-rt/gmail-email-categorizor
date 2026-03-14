@@ -1,0 +1,57 @@
+/* options/options.css */
+body {
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 24px;
+  background: #f5f5f5;
+  color: #202124;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+h1 { font-size: 20px; margin-top: 0; }
+h2 { font-size: 16px; margin-top: 24px; }
+input[type="password"], input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 300px;
+}
+input[type="color"] {
+  width: 40px; height: 36px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button {
+  padding: 8px 16px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 8px;
+}
+button:hover { background: #f1f3f4; }
+button.remove { color: #d93025; border-color: #d93025; }
+.category-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+}
+.category-row .swatch {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.category-row .name { flex: 1; font-size: 14px; }
+.add-category { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
+.note { font-size: 12px; color: #5f6368; margin-top: 16px; }
+#keyStatus { margin-left: 8px; font-size: 13px; }
