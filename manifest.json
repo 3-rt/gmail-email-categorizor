@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Email Categorizer",
+  "version": "1.0.0",
+  "description": "Categorize Gmail emails into colored buckets using AI",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": [
+    "https://mail.google.com/*",
+    "https://api.anthropic.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["src/selectors.js", "src/utils.js", "src/content.js"],
+      "css": ["src/content.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html"
+}
